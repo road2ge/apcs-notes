@@ -22,13 +22,13 @@ public class HouseTurtle
         //make the front of the house
         for(int i = 0; i < 4; i++)
         {
-            houseTurtle.forward(50);
+            houseTurtle.forward(80);
             houseTurtle.turn(90);
         }
         //move houseTurtle to the top
-        houseTurtle.jumpTo(0,50);
+        houseTurtle.jumpTo(0,80);
         //make a triangle with moveTo because I'm lazy.
-        houseTurtle.moveTo(25,75);
-        houseTurtle.moveTo(50,50);
+        houseTurtle.moveTo(40,120);
+        houseTurtle.moveTo(80,80);
     }
 }
