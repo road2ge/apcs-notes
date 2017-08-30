@@ -16,7 +16,7 @@ public class HouseTurtle
         Turtle houseTurtle = new Turtle();
         //change turtle settings
         houseTurtle.hide();
-        houseTurtle.speed(100);
+        houseTurtle.speed(1000);
         houseTurtle.penSize(5);
         houseTurtle.penColor(Color.RED);
         //make the front of the house
@@ -30,5 +30,9 @@ public class HouseTurtle
         //make a triangle with moveTo because I'm lazy.
         houseTurtle.moveTo(40,120);
         houseTurtle.moveTo(80,80);
+        houseTurtle.jumpTo(30,0);
+        houseTurtle.heading(90);
+        houseTurtle.forward(30);houseTurtle.turn(-90);houseTurtle.forward(20);houseTurtle.turn(-90);houseTurtle.forward(30);
+        
     }
 }
