@@ -33,6 +33,20 @@ public class HouseTurtle
         houseTurtle.jumpTo(30,0);
         houseTurtle.heading(90);
         houseTurtle.forward(30);houseTurtle.turn(-90);houseTurtle.forward(20);houseTurtle.turn(-90);houseTurtle.forward(30);
+        houseTurtle.jumpTo(42,14);
+        houseTurtle.forward(3);
         
+        houseTurtle.jumpTo(15,70);
+        for(int i = 0; i < 4;i++)
+        {
+            houseTurtle.forward(10);
+            houseTurtle.turn(90);
+        }
+        houseTurtle.jumpTo(55,70);
+        for(int i = 0; i < 4;i++)
+        {
+            houseTurtle.forward(10);
+            houseTurtle.turn(90);
+        }
     }
 }
