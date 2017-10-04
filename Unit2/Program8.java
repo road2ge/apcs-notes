@@ -14,6 +14,7 @@ public class Program8
         System.out.println("This will use the distance formula to find the distance between two points you define.");
         System.out.println("Please read carefully.");
         System.out.println("Input the first x value, then the second x, then the first and second y.");
+        System.out.println("Hit enter after each value.");
         double x1 = scan.nextDouble();
         double x2 = scan.nextDouble();
         double y1 = scan.nextDouble();
