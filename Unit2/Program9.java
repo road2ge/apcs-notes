@@ -1,3 +1,9 @@
+/**
+ * Takes radius of sphere, prints SA and V
+ *
+ * @author Kale Miller
+ * @version 10/4/17
+ */
 import java.util.*;
 public class Program9
 {
