@@ -5,10 +5,13 @@ public class Program9
 	{
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please type the radius of a sphere and press enter");
-		double radius = scan.nextDouble();
-		double volume = Math.pow(radius,3) * (4/3) * Math.PI;
-		double sa = 4 * Math.PI * Math.pow(radius,2);
-		System.out.println("The volume of a sphere with a radius " + radius + " is " + volume + ", and the" 
-			+ " surface area is " + sa);
+		int radius = scan.nextInt();
+		double volume = (4 * Math.pow(radius, 3) * Math.PI) / 3;
+		double sa = Math.pow(radius,2) * 4 * Math.PI;
+		volume = (int)((volume * 10000) + .5);
+		volume = volume / 10000;
+		sa = (int)((sa*10000) + .5);
+		sa = sa / 10000;
+		System.out.println("The volume of a sphere with a radius " + radius + " is " + volume + ", and the surface area is " + sa);
 	}
 }
