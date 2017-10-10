@@ -13,10 +13,12 @@ public class Program14
         //testing purposes
         for(int i = 0; i < 30; i++)
         {
-            double num = (Math.random() * 8);
+            double num = (Math.random() * 888);
+            double num2 = Math.random() * 76100.0;
             String number = "(";
-            String temp = "" + num;
-            number = number + temp.substring(0,1)    + temp.substring(2,4) + ") " + temp.substring(4,7) + "-" + temp.substring(8,11);
+            String temp2 = "" + num;
+            String temp = "" + num2;
+            number = number + temp2.substring(0,3)    + temp2.substring(4,6) + ") " + temp.substring(0,3) + "-" + temp.substring(9,12);
             System.out.println(number);
         }
     }
