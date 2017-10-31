@@ -13,24 +13,25 @@ public class Program15
     {
         Scanner scan = new Scanner(System.in);
         int num1,num2,num3;
-        String play = "s";
+        String play = "spin";
         System.out.println("Thank you for having me simulate gambling!");
-        play = scan.next();
-        while (play == "s")
+        System.out.println("enter s to spin");
+        play = scan.nextLine();
+        while (play.equalsIgnoreCase("s"))
         {
-        	num1 = (int)(Math.random() * 10);
-        	num2 = (int)(Math.random() * 10);
-        	num3 = (int)(Math.random() * 10);
-        	System.out.println(num1 + " " + num2 + " " + num3);
+            num1 = (int)(Math.random() * 10);
+            num2 = (int)(Math.random() * 10);
+            num3 = (int)(Math.random() * 10);
+            System.out.println(num1 + " " + num2 + " " + num3);
 
-        	//check if all 3 are same
-        	if(num1 == num2 && num2 == num3)
-        		System.out.println("All 3 the same!!");
-        	//now check if 2 are same
-        	else if (num1 == num2 || num2 == num3 || num1 == num3)
-        		System.out.println("2 numbers the same!!");
-        	System.out.println("enter s to spin again, anything else to exit");
-        	play = scan.next();
+            //check if all 3 are same
+            if(num1 == num2 && num2 == num3)
+                System.out.println("All 3 the same!!");
+            //now check if 2 are same
+            else if (num1 == num2 || num2 == num3 || num1 == num3)
+                System.out.println("2 numbers the same!!");
+            System.out.println("enter s to spin, anything else to exit");
+            play = scan.next();
         }
     }
 }
