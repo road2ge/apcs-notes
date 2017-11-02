@@ -1,6 +1,7 @@
 
 /**
- * Write a description of class Program6 here.
+ * Implements an application designed to determine and print the number of odd, even, and zero digits
+ * in an integer value read from the keyboard.
  * 
  * @author Kale Miller
  * @version 31 October 2017
