@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Program12_A here.
+ * Prints stuff
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kale Miller
  */
 import java.util.*;
 public class Program12_A

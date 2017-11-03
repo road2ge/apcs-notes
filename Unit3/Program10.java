@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Program10 here.
+ * Guessing game, with hi/low
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Kale Miller
  */
 import java.util.*;
 public class Program10

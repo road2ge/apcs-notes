@@ -1,9 +1,8 @@
 
 /**
- * Write a description of class Program5 here.
+ * prints each letter in string on an individual line
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Kale Miller
  */
 import java.util.*;
 public class Program5
