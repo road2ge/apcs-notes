@@ -29,13 +29,13 @@ public class Rectangle
     public double getWidth() {
     	return width;
     }
-    public void setWidth(int w) {
+    public void setWidth(double w) {
     	width = w;
     }
     public double getLength() {
     	return length;
     }
-    public void setLength(int l) {
+    public void setLength(double l) {
     	length = l;
     }
 }
