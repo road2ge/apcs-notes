@@ -11,6 +11,8 @@ public class Searches
     * A method that finds the first instance of a target value in a given array
     * Returns -1 if the target value is not found
     * 
+    * Hey remember this only works for sorted things (binary anyway)
+    * 
     * @param arr an array of integers
     * @param target value being searched for
     * @return       the index of the target or -1
