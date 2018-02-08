@@ -28,16 +28,16 @@ public class Song
     }
 
     //getters
-    public double getLength(Song s) {
-      return s.length;
+    public double getLength() {
+      return length;
     }
-    public String getName(Song s) {
-      return s.name;
+    public String getName() {
+      return name;
     }
-    public String getArtist(Song s) {
-      return s.artist;
+    public String getArtist() {
+      return artist;
     }
-    public String toString(Song s) {
-      return s.name + " by " + s.artist + " is " + s.length + " long.";
+    public String toString() {
+      return name + " by " + artist + " is " + length + " long.";
     }
 }
