@@ -223,13 +223,16 @@ public class Picture extends SimplePicture
    */
   public static void main(String[] args) 
   {
-    Picture beach = new Picture("beach.jpg");
-    beach.explore();
-    beach.zeroBlue();
-    beach.explore();
-    keepOnlyBlue();
-    negate();
-    grayscale();
+    //Picture beach = new Picture("beach.jpg");
+    //beach.explore();
+    Picture m = new Picture("redMotorcycle.jpg");
+    m.mirrorHorizontalBotToTop();
+    m.explore();
+    //beach.zeroBlue();
+    //beach.explore();
+    //keepOnlyBlue();
+    //negate();
+    //grayscale();
   }
   public static void keepOnlyBlue() {
       Picture beach = new Picture("beach.jpg");
@@ -267,5 +270,46 @@ public class Picture extends SimplePicture
       beachg.explore();
       
   }
-  
+  public void mirrorVerticalRightToLeft()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    int width = pixels[0].length;
+    for (int row = 0; row < pixels.length; row++)
+    {
+      for (int col = 0; col < width / 2; col++)
+      {
+        leftPixel = pixels[row][col];
+        rightPixel = pixels[row][width - 1 - col];
+        leftPixel.setColor(rightPixel.getColor());
+      }
+    }
+  }
+  public void mirrorHorizontal() {
+      Pixel[][] data = this.getPixels2D();
+      Pixel top = null;
+      Pixel bot = null;
+      int h = data.length;
+      for(int r=0; r<data.length;r++) {
+          for(int c=0;c<data[r].length;c++) {
+              top = data[r][c];
+              bot=data[data.length-1-r][c];
+              bot.setColor(top.getColor());
+          }
+      }
+  }
+  public void mirrorHorizontalBotToTop() {
+      Pixel[][] data = this.getPixels2D();
+      Pixel top = null;
+      Pixel bot = null;
+      int h = data.length;
+      for(int r=0; r<data.length;r++) {
+          for(int c=0;c<data[r].length;c++) {
+              top = data[r][c];
+              bot=data[data.length-1-r][c];
+              top.setColor(bot.getColor());
+          }
+      }
+  }
 } // this } is the end of class Picture, put all new methods before this
