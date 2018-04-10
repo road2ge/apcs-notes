@@ -227,9 +227,11 @@ public class Picture extends SimplePicture
     beach.explore();
     beach.zeroBlue();
     beach.explore();
-    keepBlueAndNegateAndGrayscale();
+    keepOnlyBlue();
+    negate();
+    grayscale();
   }
-  public static keepOnlyBlue() {
+  public static void keepOnlyBlue() {
       Picture beach = new Picture("beach.jpg");
       beach.explore();
       Pixel[][] data = beach.getPixels2D();
@@ -241,30 +243,27 @@ public class Picture extends SimplePicture
       }
       beach.explore();
   }
-  public static negate() {
-    Picture beach = new Picture("beach.jpg");
+  public static void negate() {
+    Picture beachn = new Picture("beach.jpg");
+    Pixel[][] data = beachn.getPixels2D();
+    for(int row = 0; row < data.length; row++) {
+        for(int col = 0; col < data[row].length; col++) {
+            data[row][col].setRed(255-data[row][col].getRed());
+            data[row][col].setGreen(255-data[row][col].getGreen());
+            data[row][col].setBlue(255-data[row][col].getBlue());
+        }
+    }
   }
-  public static void keepBlueAndNegateAndGrayscale() {
-      Picture beach = new Picture("beach.jpg");
-      Picture beachkb = new Picture("beach.jpg");
-      Picture beachn = new Picture("beach.jpg");
+  public static void grayscale() {
       Picture beachg = new Picture("beach.jpg");
-      beach.explore();
-      Pixel[][] pixelkb = beachkb.getPixels2D();
-      Pixel[][] pixeln = beachn.getPixels2D();
       Pixel[][] pixelg = beachg.getPixels2D();
-      for(int row = 0; row < pixelkb.length; row++) {
-        for(int col = 0; col < pixelkb[row].length; col++) {
-            pixeln[row][col].setRed(255-pixeln[row][col].getRed());
-            pixeln[row][col].setGreen(255-pixeln[row][col].getGreen());
-            pixeln[row][col].setBlue(255-pixeln[row][col].getBlue());
+      for(int row = 0; row < pixelg.length; row++) {
+        for(int col = 0; col < pixelg[row].length; col++) {
             pixelg[row][col].setRed((pixelg[row][col].getRed()+pixelg[row][col].getGreen()+pixelg[row][col].getBlue())/3);
             pixelg[row][col].setBlue((pixelg[row][col].getRed()+pixelg[row][col].getGreen()+pixelg[row][col].getBlue())/3);
             pixelg[row][col].setGreen((pixelg[row][col].getRed()+pixelg[row][col].getGreen()+pixelg[row][col].getBlue())/3);
         }
-        }
-      beachkb.explore();
-      beachn.explore();
+      }
       beachg.explore();
       
   }

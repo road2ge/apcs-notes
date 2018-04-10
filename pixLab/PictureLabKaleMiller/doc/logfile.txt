@@ -1,0 +1,35 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files (x86)\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Users\milkal5504\Downloads\galapagos.jar;C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller
+-d
+C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller\doc
+-encoding
+UTF-8
+-charset
+UTF-8
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller\Picture.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller\Picture.java...
+C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller\Picture.java:232: error: invalid method declaration; return type required
+  public static keepOnlyBlue() {
+                ^
+C:\Users\milkal5504\Documents\GitHub\apcs-notes\pixLab\PictureLabKaleMiller\Picture.java:244: error: invalid method declaration; return type required
+  public static negate() {
+                ^
+2 errors
